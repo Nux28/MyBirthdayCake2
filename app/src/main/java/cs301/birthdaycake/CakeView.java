@@ -34,6 +34,8 @@ public class CakeView extends SurfaceView {
     public static final float outerFlameRadius = 30.0f;
     public static final float innerFlameRadius = 15.0f;
 
+    private CakeModel myCakeModel = new CakeModel();
+
 
 
     /**
@@ -62,6 +64,13 @@ public class CakeView extends SurfaceView {
 
         setBackgroundColor(Color.WHITE);  //better than black default
 
+    }
+
+    /**
+     * retrieves this class's cakemodel object
+     */
+    public CakeModel getCakeModel() {
+        return this.myCakeModel;
     }
 
     /**
