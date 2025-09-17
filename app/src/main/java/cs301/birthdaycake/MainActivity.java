@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Switch;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -30,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         //click listener thing
         Button blowOut = findViewById(R.id.blowoutbutton);
         blowOut.setOnClickListener(myCakeController);
+
+        //link up the switch listener
+        Switch hasCandles = findViewById(R.id.candleswitch);
+        hasCandles.setOnCheckedChangeListener(myCakeController);
 
     }
 

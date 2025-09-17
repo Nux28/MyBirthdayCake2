@@ -76,7 +76,7 @@
             android:orientation="vertical">
 
             <Switch
-                android:id="@+id/switch5"
+                android:id="@+id/candleswitch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
