@@ -4,6 +4,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
 
         //make new cakecontroller object and pass in cakeview we just found
         CakeController myCakeController = new CakeController(xmlCakeView);
+
+        //click listener thing
+        Button blowOut = findViewById(R.id.blowoutbutton);
+        blowOut.setOnClickListener(myCakeController);
+
     }
 
 
